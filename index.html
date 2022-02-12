@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+</head>
+<body>
+    
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="header">
+                <button class="btn-convert"><strong>Converter</strong> </button>
+            </div>
+            <div class="main">
+                <div class="converted" >
+                   <i> <span  id="error"></span></i>
+                    <input type="number" id="num" class="input">
+                </div>
+                <div class="wrapper">
+                    <div class="left-div">
+                        <select name="left" id="left">
+                            <option value="bin" selected>Binary</option>
+                            <option value="dec">Decimal</option>
+                        </select>
+                    </div>
+
+                    <!-- image  -->
+                    <div class="loader">
+                       
+                        <label class="fa fa-refresh fa-lg"></label>
+                       
+                    </div>
+
+                    <div class="right-div">
+                        <select name="right" id="right">
+                            <option value="bin" >Binary</option>
+                            <option value="dec" selected>Decimal</option>
+                        </select>
+                    </div>
+
+                    <!-- convert button  -->
+                    <div class="btn">
+                        <button id="submit" class="submit">
+                            Go
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="results" >                   
+                    <label  id="results" class="input"></label>
+                </div>
+                
+            </div>
+
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
